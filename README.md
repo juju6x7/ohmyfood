@@ -1,2 +1,2 @@
 # ohmyfood
- Foof website with  animation CSS - SASS
+ Food website with  animation CSS - SASS
