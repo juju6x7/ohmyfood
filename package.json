@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Food website with  animation CSS - SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jujudev7/ohmyfood.git"
+  },
+  "author": "Julien Penna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jujudev7/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/jujudev7/ohmyfood#readme"
+}
