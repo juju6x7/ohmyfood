@@ -7,10 +7,6 @@ $color-secondary: #FF79DA;
 $color-teriary: #99E2D0;
 $grey-bg: #f6f6f6;
 
-// $grey-bg{
-//   background-color: #f6f6f6;
-// }
-
 * {
   margin: 0;
 }
@@ -87,9 +83,13 @@ section {
   padding: 40px 0;
 }
 
-// .step1, .step2, .step3 {
-// vertical-align: middle;
+// .fa-solid {
 // }
+
+li {
+  display: flex;
+  background-color: $grey-bg;
+}
 
 h4 {
   font-size: 0.9em;

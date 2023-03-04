@@ -65,6 +65,11 @@ section {
   padding: 40px 0;
 }
 
+li {
+  display: flex;
+  background-color: #f6f6f6;
+}
+
 h4 {
   font-size: 0.9em;
   text-align: center;
