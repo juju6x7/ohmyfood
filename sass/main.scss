@@ -2,9 +2,9 @@
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Shrikhand', cursive; */
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-teriary: #99E2D0;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-teriary: #99e2d0;
 $grey-bg: #f6f6f6;
 
 * {
@@ -83,16 +83,23 @@ section {
   padding: 40px 0;
 }
 
-// .fa-solid {
-// }
-
 li {
-  display: flex;
   background-color: $grey-bg;
+  margin: 20px;
+  border-radius: 20px;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fa-solid {
+  padding-left: 7vw;
 }
 
 h4 {
   font-size: 0.9em;
-  text-align: center;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 7vw;
 }
-
