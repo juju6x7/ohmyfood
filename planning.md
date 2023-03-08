@@ -4,3 +4,8 @@
 ⏰ Steps Fonctionnement
 ⏰ Card Resto
 
+❌ Footer
+❌ W3C Validation
+❌ Indentation HTML/CSS
+❌ Page principale : nombres (steps)
+
