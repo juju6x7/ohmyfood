@@ -1,3 +1,16 @@
+CRÉER PAGE RESTO
+❌ Flèche nav
+❌ IMG
+❌ Title + Heart
+❌ Entrées + trait vert
+❌ CARD Tartare de poulpe acidulé
+❌ ANIMATION spinner
+❌ ANIMATION complète
+
+
+❌ Remplacer logo txt par logo img ??
+❌ Box-shadow nav ??
+
 
 ✅ COURS Simplifiez-vous le CSS avec Sass 
 ✅ COURS Créez des animations CSS modernes
@@ -5,11 +18,6 @@
 ✅ Card Resto
 ✅ Footer
 ✅ Page principale : nombres (steps)
-
-❌ Remplacer logo txt par logo img ??
-❌ Box-shadow nav ??
-
-
 
 CHECK-LIST 📝
 ❒ Le code HTML et CSS est correctement indenté.
