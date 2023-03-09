@@ -55,6 +55,23 @@ img {
   border-radius: 20px;
   padding: 10px 15px;
 }
+.menu .card-dish-price .dish-animation {
+  width: 10vh;
+  height: 50px;
+  background-color: #99e2d0;
+  animation: dish-checked 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .card-dish-price .dish-animation .fa-circle-check {
+  color: white;
+  font-size: 1.5em;
+}
+.menu .card-dish-price .dish-animation .fa-circle-check:hover {
+  transform: rotate(1turn);
+  transition: transform 500ms ease-in-out;
+}
 .menu .card-dish-price h4 {
   font-size: 1em;
   padding-bottom: 5px;
@@ -69,6 +86,14 @@ img {
 }
 .menu .card-dish-price .description-price .price {
   font-weight: bold;
+}
+@keyframes dish-checked {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100);
+  }
 }
 .menu .order {
   text-align: center;

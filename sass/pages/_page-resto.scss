@@ -52,6 +52,23 @@ img {
     background-color: white;
     border-radius: 20px;
     padding: 10px 15px;
+    .dish-animation {
+      width: 10vh;
+      height: 50px;
+      background-color: #99e2d0;
+      animation: dish-checked 0.5s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .fa-circle-check{
+        color: white;
+        font-size: 1.5em;
+        &:hover {
+        transform: rotate(1turn);
+        transition: transform 500ms ease-in-out;
+        }
+      }
+    }
     h4 {
       font-size: 1em;
       padding-bottom: 5px;
@@ -68,12 +85,21 @@ img {
       }
     }
   }
+
+  //   transform-origin: right 50%;
+  @keyframes dish-checked {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-100);
+    }
+  }
   .order {
     text-align: center;
     .btn {
-        width: 50vw;
-        margin-bottom: 20px;
-      }
+      width: 50vw;
+      margin-bottom: 20px;
+    }
   }
 }
-
