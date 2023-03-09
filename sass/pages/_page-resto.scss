@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-arrow-left {
+  font-size: 1.2em;
+}
+
+img {
+  width: 100%;
+}
+
+.menu {
+  margin-top: -50px;
+  z-index: 1;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 40px 40px 0 0;
+  .resto-name-fav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 1.7em;
+    font-weight: 400;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .fa-heart {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 0.9em;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  h3::after {
+    content: "";
+    display: block;
+    width: 36px;
+    padding-top: 5px;
+    border-bottom: 3px solid #99e2d0;
+  }
+  .description-price {
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .price {
+    font-weight: bold;
+  }
+}
+
+.card-dish-price {
+  background-color: white;
+}

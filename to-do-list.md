@@ -6,10 +6,12 @@ CRÉER PAGE RESTO
 ❌ CARD Tartare de poulpe acidulé
 ❌ ANIMATION spinner
 ❌ ANIMATION complète
+❌ Ajouter Favicon
 
 
 ❌ Remplacer logo txt par logo img ??
 ❌ Box-shadow nav ??
+❌ Régler la flèche nav Page Resto
 
 
 ✅ COURS Simplifiez-vous le CSS avec Sass 
