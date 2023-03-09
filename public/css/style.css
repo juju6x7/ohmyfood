@@ -70,6 +70,13 @@ img {
 .menu .card-dish-price .description-price .price {
   font-weight: bold;
 }
+.menu .order {
+  text-align: center;
+}
+.menu .order .btn {
+  width: 50vw;
+  margin-bottom: 20px;
+}
 
 /* font-family: 'Roboto', sans-serif; */
 * {
