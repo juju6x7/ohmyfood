@@ -25,22 +25,21 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-  h2 {
-    font-family: "Shrikhand", cursive;
-    font-size: 1.7em;
-    font-weight: 400;
-    vertical-align: middle;
     padding-top: 5px;
     padding-bottom: 10px;
-  }
-  .fa-heart {
-    font-size: 1.2em;
+    h2 {
+      font-family: "Shrikhand", cursive;
+      font-size: 1.7em;
+      font-weight: 400;
+    }
+    .fa-heart {
+      font-size: 1.2em;
+    }
   }
   h3 {
     font-size: 0.9em;
     font-weight: 400;
-    padding-bottom: 10px;
+    padding: 10px 0;
   }
   h3::after {
     content: "";
@@ -49,17 +48,58 @@ img {
     padding-top: 5px;
     border-bottom: 3px solid #99e2d0;
   }
-  .description-price {
-    font-size: 0.7em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .card-dish-price {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    .dish-animation {
+      width: 10vh;
+      height: 50px;
+      background-color: #99e2d0;
+      animation: dish-checked 0.5s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .fa-circle-check{
+        color: white;
+        font-size: 1.5em;
+        &:hover {
+        transform: rotate(1turn);
+        transition: transform 500ms ease-in-out;
+        }
+      }
+    }
+    h4 {
+      font-size: 1em;
+      padding-bottom: 5px;
+    }
+    .description-price {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .description {
+        font-size: 0.83em;
+      }
+      .price {
+        font-weight: bold;
+      }
+    }
   }
-  .price {
-    font-weight: bold;
-  }
-}
 
-.card-dish-price {
-  background-color: white;
+  //   transform-origin: right 50%;
+  @keyframes dish-checked {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-100);
+    }
+  }
+  .order {
+    text-align: center;
+    .btn {
+      width: 50vw;
+      margin-bottom: 20px;
+    }
+  }
 }

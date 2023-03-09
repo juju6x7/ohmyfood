@@ -27,22 +27,21 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-.menu h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.7em;
-  font-weight: 400;
-  vertical-align: middle;
   padding-top: 5px;
   padding-bottom: 10px;
 }
-.menu .fa-heart {
+.menu .resto-name-fav h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+.menu .resto-name-fav .fa-heart {
   font-size: 1.2em;
 }
 .menu h3 {
   font-size: 0.9em;
   font-weight: 400;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 .menu h3::after {
   content: "";
@@ -51,22 +50,60 @@ img {
   padding-top: 5px;
   border-bottom: 3px solid #99e2d0;
 }
-.menu .description-price {
-  font-size: 0.7em;
+.menu .card-dish-price {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+.menu .card-dish-price .dish-animation {
+  width: 10vh;
+  height: 50px;
+  background-color: #99e2d0;
+  animation: dish-checked 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .card-dish-price .dish-animation .fa-circle-check {
+  color: white;
+  font-size: 1.5em;
+}
+.menu .card-dish-price .dish-animation .fa-circle-check:hover {
+  transform: rotate(1turn);
+  transition: transform 500ms ease-in-out;
+}
+.menu .card-dish-price h4 {
+  font-size: 1em;
+  padding-bottom: 5px;
+}
+.menu .card-dish-price .description-price {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.menu .price {
+.menu .card-dish-price .description-price .description {
+  font-size: 0.83em;
+}
+.menu .card-dish-price .description-price .price {
   font-weight: bold;
 }
-
-.card-dish-price {
-  background-color: white;
+@keyframes dish-checked {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100);
+  }
+}
+.menu .order {
+  text-align: center;
+}
+.menu .order .btn {
+  width: 50vw;
+  margin-bottom: 20px;
 }
 
 /* font-family: 'Roboto', sans-serif; */
-/* font-family: 'Shrikhand', cursive; */
 * {
   margin: 0;
 }
