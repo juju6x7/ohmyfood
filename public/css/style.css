@@ -39,7 +39,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .btn {
@@ -61,25 +61,22 @@ section {
   padding: 40px 20px;
 }
 
-li {
+.step {
   background-color: #f6f6f6;
-  margin: 20px;
+  margin: 0 0 20px 20px;
   border-radius: 20px;
-  height: 12vh;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .fa-solid {
-  padding-left: 7vw;
+  padding-right: 20px;
 }
 
 h4 {
   font-size: 0.9em;
-  margin: auto;
-  padding-left: 10px;
-  padding-right: 7vw;
 }
 
 h5 {
@@ -91,9 +88,10 @@ h5 {
 }
 
 .card-resto {
-  height: 50vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
+  background-color: white;
   border-radius: 25px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   margin-bottom: 20px;
