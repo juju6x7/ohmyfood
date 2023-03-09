@@ -1,11 +1,14 @@
 
 ✅ COURS Simplifiez-vous le CSS avec Sass 
 ✅ COURS Créez des animations CSS modernes
-⏰ Steps Fonctionnement
-⏰ Card Resto
+✅ Steps Fonctionnement
+✅ Card Resto
+✅ Footer
+✅ Page principale : nombres (steps)
 
-❌ Footer
-❌ Page principale : nombres (steps)
+❌ Remplacer logo txt par logo img ??
+❌ Box-shadow nav ??
+
 
 
 CHECK-LIST 📝
