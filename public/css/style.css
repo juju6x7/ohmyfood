@@ -58,11 +58,18 @@ img {
 .menu .card-dish-price .dish-animation {
   width: 10vh;
   height: 50px;
+  position: absolute;
+  right: -10vh;
   background-color: #99e2d0;
   animation: dish-checked 0.5s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 330ms ease-in-out;
+}
+.menu .card-dish-price .dish-animation:hover {
+  opacity: 1;
+  transform: translate(-10vh);
 }
 .menu .card-dish-price .dish-animation .fa-circle-check {
   color: white;

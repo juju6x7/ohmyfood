@@ -55,17 +55,24 @@ img {
     .dish-animation {
       width: 10vh;
       height: 50px;
+      position: absolute;
+      right: -10vh;
       background-color: #99e2d0;
       animation: dish-checked 0.5s ease-in-out;
       display: flex;
       align-items: center;
       justify-content: center;
-      .fa-circle-check{
+      transition: transform 330ms ease-in-out;
+      &:hover {
+        opacity: 1;
+        transform: translate(-10vh);
+      }
+      .fa-circle-check {
         color: white;
         font-size: 1.5em;
         &:hover {
-        transform: rotate(1turn);
-        transition: transform 500ms ease-in-out;
+          transform: rotate(1turn);
+          transition: transform 500ms ease-in-out;
         }
       }
     }
