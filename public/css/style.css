@@ -8,6 +8,10 @@ nav {
 
 .fa-arrow-left {
   font-size: 1.2em;
+  position: absolute;
+  left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 img {
@@ -54,30 +58,9 @@ img {
   background-color: white;
   border-radius: 20px;
   padding: 10px 15px;
-}
-.menu .card-dish-price .dish-animation {
-  width: 10vh;
-  height: 50px;
-  position: absolute;
-  right: -10vh;
-  background-color: #99e2d0;
-  animation: dish-checked 0.5s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 330ms ease-in-out;
-}
-.menu .card-dish-price .dish-animation:hover {
-  opacity: 1;
-  transform: translate(-10vh);
-}
-.menu .card-dish-price .dish-animation .fa-circle-check {
-  color: white;
-  font-size: 1.5em;
-}
-.menu .card-dish-price .dish-animation .fa-circle-check:hover {
-  transform: rotate(1turn);
-  transition: transform 500ms ease-in-out;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu .card-dish-price h4 {
   font-size: 1em;
@@ -94,18 +77,46 @@ img {
 .menu .card-dish-price .description-price .price {
   font-weight: bold;
 }
-@keyframes dish-checked {
-  0% {
-    transform: translate(0);
-  }
-  100% {
-    transform: translate(-100);
-  }
+.menu .card-dish-price:hover .dish-animation {
+  opacity: 1;
+  transform: translate(-10vh);
 }
-.menu .order {
+.menu .card-dish-price:hover .fa-circle-check {
+  transform: rotate(1turn);
+}
+.menu .dish-animation {
+  width: 8vh;
+  height: 100%;
+  position: absolute;
+  right: -10vh;
+  background-color: #99e2d0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms ease-in-out;
+}
+.menu .dish-animation .fa-circle-check {
+  color: white;
+  background-color: #99e2d0;
+  font-size: 1.5em;
+  transition: transform 500ms ease-in-out 100ms;
+}
+
+.description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.order {
   text-align: center;
 }
-.menu .order .btn {
+.order .btn {
   width: 50vw;
   margin-bottom: 20px;
 }

@@ -7,6 +7,10 @@ nav {
 
 .fa-arrow-left {
   font-size: 1.2em;
+  position: absolute;
+  left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 img {
@@ -48,34 +52,14 @@ img {
     padding-top: 5px;
     border-bottom: 3px solid #99e2d0;
   }
+
   .card-dish-price {
     background-color: white;
     border-radius: 20px;
     padding: 10px 15px;
-    .dish-animation {
-      width: 10vh;
-      height: 50px;
-      position: absolute;
-      right: -10vh;
-      background-color: #99e2d0;
-      animation: dish-checked 0.5s ease-in-out;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 330ms ease-in-out;
-      &:hover {
-        opacity: 1;
-        transform: translate(-10vh);
-      }
-      .fa-circle-check {
-        color: white;
-        font-size: 1.5em;
-        &:hover {
-          transform: rotate(1turn);
-          transition: transform 500ms ease-in-out;
-        }
-      }
-    }
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
     h4 {
       font-size: 1em;
       padding-bottom: 5px;
@@ -91,22 +75,49 @@ img {
         font-weight: bold;
       }
     }
+    &:hover .dish-animation {
+      opacity: 1;
+      transform: translate(-10vh);
+    }
+    &:hover .fa-circle-check {
+      transform: rotate(1turn);
+    }
   }
+  .dish-animation {
+    width: 8vh;
+    height: 100%;
+    position: absolute;
+    right: -10vh;
+    background-color: #99e2d0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in-out;
+    .fa-circle-check {
+      color: white;
+      background-color: #99e2d0;
+      font-size: 1.5em;
+      transition: transform 500ms ease-in-out 100ms;
+    }
+  }
+}
 
-  //   transform-origin: right 50%;
-  @keyframes dish-checked {
-    0% {
-      transform: translate(0);
-    }
-    100% {
-      transform: translate(-100);
-    }
-  }
-  .order {
-    text-align: center;
-    .btn {
-      width: 50vw;
-      margin-bottom: 20px;
-    }
+.description {
+  // margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.order {
+  text-align: center;
+  .btn {
+    width: 50vw;
+    margin-bottom: 20px;
   }
 }
