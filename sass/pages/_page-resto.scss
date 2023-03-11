@@ -53,16 +53,21 @@ img {
     border-bottom: 3px solid #99e2d0;
   }
 
-  .card-dish-price {
+  .card-dish {
     background-color: white;
     border-radius: 20px;
     padding: 10px 15px;
     position: relative;
     white-space: nowrap;
-    overflow: hidden;
+    transition: padding-right 500ms ease-in-out;
+    &:hover {
+      padding-right: 20vw;
+    }
     h4 {
       font-size: 1em;
       padding-bottom: 5px;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
     .description-price {
       display: flex;
@@ -70,48 +75,44 @@ img {
       justify-content: space-between;
       .description {
         font-size: 0.83em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
       .price {
         font-weight: bold;
       }
     }
+    .dish-animation {
+      width: 15vw;
+      height: 100%;
+      position: absolute;
+      right: -10vw;
+      background-color: #99e2d0;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 500ms ease-in-out;
+      .fa-circle-check {
+        color: white;
+        background-color: #99e2d0;
+        font-size: 1.5em;
+        transition: transform 500ms ease-in-out 100ms;
+      }
+    }
     &:hover .dish-animation {
       opacity: 1;
-      transform: translate(-10vh);
+      transform: translate(-10vw);
     }
     &:hover .fa-circle-check {
       transform: rotate(1turn);
     }
   }
-  .dish-animation {
-    width: 8vh;
-    height: 100%;
-    position: absolute;
-    right: -10vh;
-    background-color: #99e2d0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 500ms ease-in-out;
-    .fa-circle-check {
-      color: white;
-      background-color: #99e2d0;
-      font-size: 1.5em;
-      transition: transform 500ms ease-in-out 100ms;
-    }
-  }
-}
-
-.description {
-  // margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .order {
