@@ -1,25 +1,31 @@
 CRÉER PAGE RESTO
-❌ Flèche nav
-❌ IMG
-❌ Title + Heart
-❌ Entrées + trait vert
-❌ CARD Tartare de poulpe acidulé
-❌ ANIMATION spinner
-❌ ANIMATION complète
+
+❌ Box-shadow nav ??
+
 ❌ Ajouter Favicon
 
-
 ❌ Remplacer logo txt par logo img ??
-❌ Box-shadow nav ??
-❌ Régler la flèche nav Page Resto
 
 
 ✅ COURS Simplifiez-vous le CSS avec Sass 
 ✅ COURS Créez des animations CSS modernes
+
+INDEX
 ✅ Steps Fonctionnement
 ✅ Card Resto
 ✅ Footer
 ✅ Page principale : nombres (steps)
+✅ Ajouter encart Nouveau
+
+PAGE RESTO
+✅ Flèche nav
+✅ IMG page resto
+✅ Title + Heart
+✅ ENTRÉES + trait vert
+✅ CARD Tartare de poulpe acidulé
+✅ Ajouter les autres CARDS
+✅ ANIMATION spinner
+✅ ANIMATION complète
 
 CHECK-LIST 📝
 ❒ Le code HTML et CSS est correctement indenté.
