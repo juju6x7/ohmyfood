@@ -25,9 +25,9 @@ header {
 }
 
 nav {
-  height: 10vh;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   position: relative;
+  padding-top: 10px;
 }
 
 a {
@@ -36,10 +36,11 @@ a {
 
 h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 2em;
   font-weight: 400;
   vertical-align: middle;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 2%;
+  padding-bottom: 1%;
 }
 
 .localization {
