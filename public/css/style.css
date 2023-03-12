@@ -48,9 +48,6 @@ img {
   font-size: 1.7em;
   font-weight: 400;
 }
-.menu .resto-name-fav .fa-heart {
-  font-size: 1.5em;
-}
 .menu .main-course,
 .menu .desserts {
   margin-top: 10px;
@@ -284,6 +281,10 @@ h5 {
 
 .restaurants {
   background-color: #f6f6f6;
+}
+
+.fa-heart {
+  font-size: 1.4em;
 }
 
 .card-resto {

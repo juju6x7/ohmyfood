@@ -4,6 +4,7 @@ Au survol, la couleur de fond des boutons principaux devra légèrement s’écl
 ❌ Modifier la couleur de dish-checked au :active
 ❌ Remplacer logo txt par logo img ??
 ❌ Ajouter Favicon
+❌ Responsive Design
 ❌ Delay plats au scroll
 
 ✅ COURS Simplifiez-vous le CSS avec Sass 
