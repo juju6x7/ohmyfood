@@ -1,3 +1,4 @@
+❌ Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
 ❌ Responsive Design
 ❌ Architecture SASS
 ❌ Remplacer logo txt par logo img ??
