@@ -1,6 +1,6 @@
+❌ Régler animation check bord droit
 ❌ FAVORI : au clic, le cœur devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
-❌ Hover Step violet
-❌ Modifier la couleur de dish-checked au :active
+
 ❌ Architecture SASS
 ❌ Remplacer logo txt par logo img ??
 ❌ Ajouter Favicon
@@ -18,6 +18,7 @@ INDEX
 ✅ Page principale : nombres (steps)
 ✅ Ajouter encart Nouveau
 ✅ Box-shadow nav
+✅ Hover Step violet
 
 PAGE RESTO
 ✅ Flèche nav
@@ -30,6 +31,7 @@ PAGE RESTO
 ✅ ANIMATION complète
 ✅ Animation Card dish vers le haut
 ✅ Animation Cards dish delay
+✅ Modifier la couleur de dish-checked au :active
 
 ✅ Loading spinner : doit apparaître 1 à 3 secondes quand on arrive sur la page d'accueil
 Couvrir l'intégralité de l'écran.

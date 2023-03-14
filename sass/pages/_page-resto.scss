@@ -73,6 +73,21 @@ img {
     transition: padding-right 500ms ease-in-out;
     &:hover {
       padding-right: 20vw;
+      .dish-animation {
+        opacity: 1;
+        transform: translate(-10vw);
+      }
+      .fa-circle-check {
+        transform: rotate(1turn);
+      }
+    }
+    &:active {
+      .dish-animation {
+        background-color: #9356dc;
+        .fa-circle-check {
+          background-color: #9356dc;
+        }
+      }
     }
     h4 {
       font-size: 1em;
@@ -118,13 +133,13 @@ img {
         transition: transform 500ms ease-in-out 100ms;
       }
     }
-    &:hover .dish-animation {
-      opacity: 1;
-      transform: translate(-10vw);
-    }
-    &:hover .fa-circle-check {
-      transform: rotate(1turn);
-    }
+    // &:hover .dish-animation {
+    //   opacity: 1;
+    //   transform: translate(-10vw);
+    // }
+    // &:hover .fa-circle-check {
+    //   transform: rotate(1turn);
+    // }
   }
   .order {
     text-align: center;
