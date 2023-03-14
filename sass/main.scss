@@ -88,6 +88,7 @@ h2 {
 
 .explore {
   padding: 40px 30px;
+  text-align: center;
   background-color: $grey-bg;
 }
 
@@ -165,6 +166,10 @@ h5 {
 .restaurants {
   background-color: $grey-bg;
 }
+
+// .operation h3 {
+//   text-align: left;
+// }
 
 .fa-regular.fa-heart {
   font-size: 1.4em;
@@ -344,3 +349,28 @@ h6 {
     transform: scale(0);
   }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    max-width: 992px;
+  }
+
+  .explore-opeation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .explore {
+    width: 50%;
+    background-color: #f3ecff;
+  } 
+  
+  .operation {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  }

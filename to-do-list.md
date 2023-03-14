@@ -1,4 +1,3 @@
-❌ Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
 ❌ Responsive Design
 ❌ Architecture SASS
 ❌ Remplacer logo txt par logo img ??
@@ -36,6 +35,8 @@ Couvrir l'intégralité de l'écran.
 ✅ BTN : au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
 ✅ FAVORI : au clic, le cœur devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
 ✅ Ajouter Favicon
+✅ Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
+
 
 CHECK-LIST 📝
 ❒ Le code HTML et CSS est correctement indenté.
