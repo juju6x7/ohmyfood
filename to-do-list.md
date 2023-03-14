@@ -1,7 +1,6 @@
+❌ Responsive Design
 ❌ Architecture SASS
 ❌ Remplacer logo txt par logo img ??
-❌ Ajouter Favicon
-❌ Responsive Design
 ❌ Delay Dishes au scroll
 ❌ Vitesse hover btn 
 
@@ -35,6 +34,7 @@ PAGE RESTO
 Couvrir l'intégralité de l'écran.
 ✅ BTN : au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
 ✅ FAVORI : au clic, le cœur devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
+✅ Ajouter Favicon
 
 CHECK-LIST 📝
 ❒ Le code HTML et CSS est correctement indenté.
