@@ -72,6 +72,7 @@ img {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   position: relative;
   white-space: nowrap;
+  overflow: hidden;
   transition: padding-right 500ms ease-in-out;
 }
 .menu .card-dish:hover {
@@ -184,11 +185,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h6 {
+h1,
+h2,
+h6 {
   font-weight: 500;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   font-weight: 600;
 }
 
@@ -322,11 +327,19 @@ h5 {
   right: 5vw;
   opacity: 1;
 }
-.fa-regular.fa-heart:hover, .fa-regular.fa-heart :active, .fa-regular.fa-heart :focus {
+.fa-regular.fa-heart:hover,
+.fa-regular.fa-heart :active,
+.fa-regular.fa-heart :focus {
   opacity: 0;
+  transition: opacity 800ms;
 }
-.fa-regular.fa-heart:hover + .fa-solid.fa-heart, .fa-regular.fa-heart :active + .fa-solid.fa-heart, .fa-regular.fa-heart :focus + .fa-solid.fa-heart {
+.fa-regular.fa-heart:hover + .fa-solid.fa-heart,
+.fa-regular.fa-heart :active + .fa-solid.fa-heart,
+.fa-regular.fa-heart :focus + .fa-solid.fa-heart {
   visibility: visible;
+  transform-origin: bottom;
+  opacity: 1;
+  transition: opacity 800ms;
 }
 
 .fa-solid.fa-heart {
@@ -334,6 +347,7 @@ h5 {
   position: absolute;
   right: 5vw;
   visibility: hidden;
+  opacity: 0;
 }
 
 .bg-heart {
@@ -345,15 +359,15 @@ h5 {
 
 .instagram {
   cursor: pointer;
-  background: -webkit-radial-gradient(33% 100% circle, #515ECF 4%, #9B36B7 30%, #D92E7F 62%, #F15245 85%, #FED373);
-  background: radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #F15245 85%, #FED373);
+  background: -webkit-radial-gradient(33% 100% circle, #515ecf 4%, #9b36b7 30%, #d92e7f 62%, #f15245 85%, #fed373);
+  background: radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #f15245 85%, #fed373);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20vw;
 }
 .instagram:hover {
-  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  background: -webkit-radial-gradient(33% 100% circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

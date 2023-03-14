@@ -1,6 +1,3 @@
-❌ Régler animation check bord droit
-❌ FAVORI : au clic, le cœur devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
-
 ❌ Architecture SASS
 ❌ Remplacer logo txt par logo img ??
 ❌ Ajouter Favicon
@@ -32,10 +29,12 @@ PAGE RESTO
 ✅ Animation Card dish vers le haut
 ✅ Animation Cards dish delay
 ✅ Modifier la couleur de dish-checked au :active
+✅ Régler animation check bord droit
 
 ✅ Loading spinner : doit apparaître 1 à 3 secondes quand on arrive sur la page d'accueil
 Couvrir l'intégralité de l'écran.
 ✅ BTN : au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
+✅ FAVORI : au clic, le cœur devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
 
 CHECK-LIST 📝
 ❒ Le code HTML et CSS est correctement indenté.

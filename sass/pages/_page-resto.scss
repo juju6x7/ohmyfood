@@ -70,6 +70,7 @@ img {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
     white-space: nowrap;
+    overflow: hidden;
     transition: padding-right 500ms ease-in-out;
     &:hover {
       padding-right: 20vw;
@@ -133,13 +134,7 @@ img {
         transition: transform 500ms ease-in-out 100ms;
       }
     }
-    // &:hover .dish-animation {
-    //   opacity: 1;
-    //   transform: translate(-10vw);
-    // }
-    // &:hover .fa-circle-check {
-    //   transform: rotate(1turn);
-    // }
+
   }
   .order {
     text-align: center;
