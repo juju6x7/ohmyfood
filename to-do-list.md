@@ -1,5 +1,6 @@
 
 ❌ Responsive Design
+❌ Favori page resto Desktop
 ❌ Architecture SASS
 ❌ Remplacer logo txt par logo img ??
 ❌ Delay Dishes au scroll
@@ -31,6 +32,7 @@ PAGE RESTO
 ✅ Animation Cards dish delay
 ✅ Modifier la couleur de dish-checked au :active
 ✅ Régler animation check bord droit
+✅ Aligner Entrées - Plats - Desserts
 
 ✅ Loading spinner : doit apparaître 1 à 3 secondes quand on arrive sur la page d'accueil
 Couvrir l'intégralité de l'écran.

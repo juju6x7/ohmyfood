@@ -41,10 +41,8 @@ img {
       font-size: 1.7em;
       font-weight: 400;
     }
-    // .fa-heart {
-    //   font-size: 1.5em;
-    // }
   }
+  .starters,
   .main-course,
   .desserts {
     margin-top: 10px;
@@ -106,6 +104,7 @@ img {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        padding-right: 7px;
       }
       .price {
         font-weight: bold;
@@ -115,7 +114,6 @@ img {
     .dish-animation {
       width: 15vw;
       height: 100%;
-      position: absolute;
       right: -10vw;
       background-color: #99e2d0;
       border-top-right-radius: 20px;
@@ -134,7 +132,6 @@ img {
         transition: transform 500ms ease-in-out 100ms;
       }
     }
-
   }
   .order {
     text-align: center;
@@ -177,4 +174,45 @@ img {
 
 .dish4 {
   animation-delay: 400ms;
+}
+
+@media screen and (min-width: 992px) {
+  img {
+    height: 67vh;
+  }
+
+  .menu {
+    max-width: 100%;
+    margin: -50px auto 0 auto;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    .card-dish {
+    padding: 20px;
+    }
+  }
+
+  .menu .resto-name-fav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  .dishes {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 3vw;
+    margin: auto;
+  }
+
+ 
+  .menu .order .btn {
+    width: 33vw;
+    margin-top: 50px;
+  }
 }

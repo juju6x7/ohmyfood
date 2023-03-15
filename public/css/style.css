@@ -48,6 +48,7 @@ img {
   font-size: 1.7em;
   font-weight: 400;
 }
+.menu .starters,
 .menu .main-course,
 .menu .desserts {
   margin-top: 10px;
@@ -108,6 +109,7 @@ img {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-right: 7px;
 }
 .menu .card-dish .description-price .price {
   font-weight: bold;
@@ -116,7 +118,6 @@ img {
 .menu .card-dish .dish-animation {
   width: 15vw;
   height: 100%;
-  position: absolute;
   right: -10vw;
   background-color: #99e2d0;
   border-top-right-radius: 20px;
@@ -174,6 +175,41 @@ img {
   animation-delay: 400ms;
 }
 
+@media screen and (min-width: 992px) {
+  img {
+    height: 67vh;
+  }
+  .menu {
+    max-width: 100%;
+    margin: -50px auto 0 auto;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+  }
+  .menu .card-dish {
+    padding: 20px;
+  }
+  .menu .resto-name-fav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .dishes {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 3vw;
+    margin: auto;
+  }
+  .menu .order .btn {
+    width: 33vw;
+    margin-top: 50px;
+  }
+}
 /* font-family: 'Roboto', sans-serif; */
 * {
   margin: 0;
@@ -530,7 +566,8 @@ h6 {
   .resto-place-fav {
     line-height: 1.6em;
   }
-  .fa-regular.fa-heart, .fa-solid.fa-heart {
+  .fa-regular.fa-heart,
+  .fa-solid.fa-heart {
     right: 4vw;
   }
   .menu {
@@ -539,6 +576,9 @@ h6 {
   }
   .menu .card-dish {
     padding: 20px;
+  }
+  .menu .card-dish .dish-animation .fa-circle-check {
+    font-size: 1.7em;
   }
 }
 @media screen and (min-width: 992px) {
@@ -576,16 +616,6 @@ h6 {
   }
   .resto-place-fav {
     line-height: 1.6em;
-  }
-  .fa-regular.fa-heart, .fa-solid.fa-heart {
-    right: 3vw;
-  }
-  .menu {
-    max-width: 800px;
-    margin: -20px auto 0 auto;
-  }
-  .menu .card-dish {
-    padding: 25px;
   }
   .icons {
     width: 10vw;

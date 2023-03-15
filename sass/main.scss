@@ -211,9 +211,9 @@ h5 {
   margin-bottom: 20px;
   position: relative;
   &:hover {
-  margin-top: -5px;
-  box-shadow: rgba(147, 86, 220, 0.3) 0px 1px 2px 0px,
-  rgba(147, 86, 220, 0.3) 0px 2px 6px 2px;
+    margin-top: -5px;
+    box-shadow: rgba(147, 86, 220, 0.3) 0px 1px 2px 0px,
+      rgba(147, 86, 220, 0.3) 0px 2px 6px 2px;
   }
   img {
     max-width: 100%;
@@ -383,7 +383,8 @@ h6 {
     line-height: 1.6em;
   }
 
-  .fa-regular.fa-heart, .fa-solid.fa-heart {
+  .fa-regular.fa-heart,
+  .fa-solid.fa-heart {
     right: 4vw;
   }
 
@@ -394,6 +395,10 @@ h6 {
 
   .menu .card-dish {
     padding: 20px;
+  }
+
+  .menu .card-dish .dish-animation .fa-circle-check {
+    font-size: 1.7em;
   }
 }
 
@@ -442,24 +447,11 @@ h6 {
     line-height: 1.6em;
   }
 
-  .fa-regular.fa-heart, .fa-solid.fa-heart {
-    right: 3vw;
-  }
-
-  .menu {
-    max-width: 800px;
-    margin: -20px auto 0 auto;
-  }
-
-  .menu .card-dish {
-    padding: 25px;
-  }
-
   .icons {
     width: 10vw;
     height: 10vw;
   }
-  
+
   .bg-icons {
     width: 15vw;
     height: 15vw;
