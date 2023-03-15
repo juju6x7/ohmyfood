@@ -71,7 +71,7 @@ img {
     position: relative;
     white-space: nowrap;
     overflow: hidden;
-    transition: padding-right 500ms ease-in-out;
+    transition: padding-right 300ms ease-in-out;
     &:hover {
       padding-right: 20vw;
       .dish-animation {

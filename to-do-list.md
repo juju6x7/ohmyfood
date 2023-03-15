@@ -1,4 +1,4 @@
-❌ Hover Card (top + shadow)
+
 ❌ Responsive Design
 ❌ Architecture SASS
 ❌ Remplacer logo txt par logo img ??
@@ -16,6 +16,7 @@ INDEX
 ✅ Ajouter encart Nouveau
 ✅ Box-shadow nav
 ✅ Hover Step violet
+✅ Hover Card (top + shadow)
 
 PAGE RESTO
 ✅ Flèche nav

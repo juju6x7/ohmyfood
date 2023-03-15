@@ -73,7 +73,7 @@ img {
   position: relative;
   white-space: nowrap;
   overflow: hidden;
-  transition: padding-right 500ms ease-in-out;
+  transition: padding-right 300ms ease-in-out;
 }
 .menu .card-dish:hover {
   padding-right: 20vw;
@@ -318,7 +318,7 @@ h5 {
 .fa-regular.fa-heart {
   font-size: 1.4em;
   position: absolute;
-  right: 20px;
+  right: 5vw;
   opacity: 1;
 }
 .fa-regular.fa-heart:hover, .fa-regular.fa-heart:active, .fa-regular.fa-heart:focus {
@@ -335,7 +335,7 @@ h5 {
 .fa-solid.fa-heart {
   font-size: 1.4em;
   position: absolute;
-  right: 20px;
+  right: 5vw;
   visibility: hidden;
   opacity: 0;
 }
@@ -356,6 +356,10 @@ h5 {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   margin-bottom: 20px;
   position: relative;
+}
+.card-resto:hover {
+  margin-top: -5px;
+  box-shadow: rgba(147, 86, 220, 0.3) 0px 1px 2px 0px, rgba(147, 86, 220, 0.3) 0px 2px 6px 2px;
 }
 .card-resto img {
   max-width: 100%;
@@ -526,6 +530,16 @@ h6 {
   .resto-place-fav {
     line-height: 1.6em;
   }
+  .fa-regular.fa-heart, .fa-solid.fa-heart {
+    right: 4vw;
+  }
+  .menu {
+    max-width: 600px;
+    margin: -30px auto 0 auto;
+  }
+  .menu .card-dish {
+    padding: 20px;
+  }
 }
 @media screen and (min-width: 992px) {
   body {
@@ -562,6 +576,24 @@ h6 {
   }
   .resto-place-fav {
     line-height: 1.6em;
+  }
+  .fa-regular.fa-heart, .fa-solid.fa-heart {
+    right: 3vw;
+  }
+  .menu {
+    max-width: 800px;
+    margin: -20px auto 0 auto;
+  }
+  .menu .card-dish {
+    padding: 25px;
+  }
+  .icons {
+    width: 10vw;
+    height: 10vw;
+  }
+  .bg-icons {
+    width: 15vw;
+    height: 15vw;
   }
   footer {
     padding: 3vw 10vw;
