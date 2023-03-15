@@ -67,8 +67,7 @@ h1 {
   font-family: "Shrikhand", cursive;
   font-size: 2em;
   vertical-align: middle;
-  padding-top: 2%;
-  padding-bottom: 1%;
+  padding: 5px;
 }
 
 .localization {
@@ -105,8 +104,8 @@ h3 {
   margin-bottom: 20px;
   border-radius: 30px;
   padding: 20px;
-  -webkit-box-shadow: 4px 5px 15px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 5px 15px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
   @include bg-btn;
   &:hover {
     -webkit-box-shadow: 4px 5px 15px 1px rgba(0, 0, 0, 0.75);
@@ -167,14 +166,10 @@ h5 {
   background-color: $grey-bg;
 }
 
-// .operation h3 {
-//   text-align: left;
-// }
-
 .fa-regular.fa-heart {
   font-size: 1.4em;
   position: absolute;
-  right: 5vw;
+  right: 20px;
   opacity: 1;
   &:hover,
   &:active,
@@ -193,7 +188,7 @@ h5 {
 .fa-solid.fa-heart {
   font-size: 1.4em;
   position: absolute;
-  right: 5vw;
+  right: 20px;
   visibility: hidden;
   opacity: 0;
 }
@@ -235,6 +230,10 @@ h5 {
 }
 
 .container {
+ margin: auto 0;
+}
+
+.resto-place-fav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -350,7 +349,6 @@ h6 {
   }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body {
     max-width: 992px;
@@ -364,13 +362,69 @@ h6 {
   .explore {
     width: 50%;
     background-color: #f3ecff;
-  } 
-  
+  }
+
   .operation {
     width: 50%;
+  }
+
+  .grid-restos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+
+  .resto-place-fav {
+    line-height: 1.6em;
   }
 }
 
 @media screen and (min-width: 992px) {
-
+  body {
+    min-width: 992px;
+    max-width: none;
   }
+
+  .explore-opeation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .explore {
+    width: 50%;
+    background-color: #f3ecff;
+    padding-left: 10vw;
+  }
+
+  .operation {
+    width: 50%;
+    padding-right: 10vw;
+    padding-left: 5vw;
+  }
+
+  .step {
+    max-width: 25vw;
+  }
+
+  .restaurants {
+    padding: 3vw 10vw;
+  }
+
+  .grid-restos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+
+  .card-resto {
+    height: 40vh;
+  }
+
+  .resto-place-fav {
+    line-height: 1.6em;
+  }
+
+  footer {
+    padding: 3vw 10vw;
+  }
+}

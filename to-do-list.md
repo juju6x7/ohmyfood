@@ -1,3 +1,4 @@
+❌ Hover Card (top + shadow)
 ❌ Responsive Design
 ❌ Architecture SASS
 ❌ Remplacer logo txt par logo img ??
