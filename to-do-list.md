@@ -1,6 +1,8 @@
-❌ Responsive Design
-❌ Favori page resto Desktop
 ❌ Architecture SASS
+
+AMÉLIORATIONS
+❌ Responsive Design Desktop
+❌ Favori page resto Desktop
 ❌ Delay Dishes au scroll
 ❌ Vitesse hover btn 
 
@@ -39,6 +41,7 @@ Couvrir l'intégralité de l'écran.
 ✅ Ajouter Favicon
 ✅ Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
 ✅ Logo img en commentaire sous logo txt 
+✅ Responsive Design 
 
 CHECK-LIST 📝
 ❒ Le code HTML et CSS est correctement indenté.

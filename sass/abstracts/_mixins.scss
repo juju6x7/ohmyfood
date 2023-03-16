@@ -1,0 +1,16 @@
+@mixin bg-btn {
+    background: rgb(255, 121, 218);
+    background: -moz-linear-gradient(
+      171deg,
+      rgba(255, 121, 218, 1) 0%,
+      rgba(147, 86, 220, 1) 75%
+    );
+    background: -webkit-linear-gradient(
+      171deg,
+      rgba(255, 121, 218, 1) 0%,
+      rgba(147, 86, 220, 1) 75%
+    );
+    background: linear-gradient(171deg, $color-secondary 0%, $color-primary 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da",endColorstr="#9356dc",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da",endColorstr="#9356dc",GradientType=1);
+  }

@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .grid-restos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .dishes {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    margin: auto;
+    gap: 3vw;
+  }
+}
