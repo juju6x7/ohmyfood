@@ -59,6 +59,11 @@ nav {
   padding-top: 10px;
 }
 
+.logo {
+  width: 200px;
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -447,11 +452,6 @@ h6 {
 
   .resto-place-fav {
     line-height: 1.6em;
-  }
-
-  .fa-regular.fa-heart,
-  .fa-solid.fa-heart {
-    right: 3vw;
   }
 
   .icons {

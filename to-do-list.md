@@ -1,8 +1,6 @@
-
 ❌ Responsive Design
 ❌ Favori page resto Desktop
 ❌ Architecture SASS
-❌ Remplacer logo txt par logo img ??
 ❌ Delay Dishes au scroll
 ❌ Vitesse hover btn 
 
@@ -40,7 +38,7 @@ Couvrir l'intégralité de l'écran.
 ✅ FAVORI : au clic, le cœur devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
 ✅ Ajouter Favicon
 ✅ Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
-
+✅ Logo img en commentaire sous logo txt 
 
 CHECK-LIST 📝
 ❒ Le code HTML et CSS est correctement indenté.

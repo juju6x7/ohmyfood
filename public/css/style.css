@@ -20,8 +20,12 @@ a {
   left: 5%;
   top: 45%;
 }
+.fa-arrow-left:hover {
+  color: #9356dc;
+  font-size: 1.5em;
+}
 
-img {
+header > img {
   width: 100%;
   height: 36vh;
   object-fit: cover;
@@ -176,16 +180,14 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  img {
+  header > img {
     height: 67vh;
   }
   .menu {
-    max-width: 100%;
     margin: -50px auto 0 auto;
     padding: 30px 50px;
     display: flex;
     flex-direction: column;
-    font-size: 1.2em;
   }
   .menu .card-dish {
     padding: 20px;
@@ -198,12 +200,21 @@ img {
     padding-top: 5px;
     padding-bottom: 10px;
   }
+  .menu .card-dish:hover {
+    padding-right: 6vw;
+  }
+  .menu .card-dish:hover .dish-animation {
+    transform: translate(-5vw);
+  }
+  .menu .card-dish .dish-animation {
+    width: 5vw;
+    right: -5vw;
+  }
   .dishes {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    gap: 3vw;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
     margin: auto;
+    gap: 3vw;
   }
   .menu .order .btn {
     width: 33vw;
@@ -241,6 +252,11 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   position: relative;
   padding-top: 10px;
+}
+
+.logo {
+  width: 200px;
+  padding: 10px;
 }
 
 a {
@@ -618,10 +634,6 @@ h6 {
   }
   .resto-place-fav {
     line-height: 1.6em;
-  }
-  .fa-regular.fa-heart,
-  .fa-solid.fa-heart {
-    right: 3vw;
   }
   .icons {
     width: 10vw;
