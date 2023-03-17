@@ -1,4 +1,6 @@
 ❌ Architecture SASS
+❌ Questions GMAIL
+❌ Peut-on importer (ex: @import "base/typography";) ailleurs que dans main.scss ou mauvaise pratique ?
 
 AMÉLIORATIONS
 ❌ Responsive Design Desktop
