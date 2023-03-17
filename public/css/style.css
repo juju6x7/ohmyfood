@@ -709,8 +709,8 @@ h6 {
   .fa-solid.fa-heart {
     right: 2vw;
   }
-  .fa-regular.fa-heart,
-  .fa-solid.fa-heart {
+  .resto-name-fav .fa-regular.fa-heart,
+  .resto-name-fav .fa-solid.fa-heart {
     right: 10vw;
   }
 }

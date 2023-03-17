@@ -2,7 +2,6 @@
 
 AMÉLIORATIONS
 ❌ Responsive Design Desktop
-❌ Favori page resto Desktop
 ❌ Delay Dishes au scroll
 ❌ Vitesse hover btn 
 
