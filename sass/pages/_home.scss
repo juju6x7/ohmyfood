@@ -1,3 +1,203 @@
 a {
   color: white;
 }
+
+.localization {
+  height: 55px;
+  line-height: 55px;
+  background-color: #e8e8e8;
+}
+
+.fa-location-dot {
+  translate: -15px;
+}
+
+.explore-operation {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.explore {
+  padding: 40px 30px;
+  text-align: center;
+  background-color: $grey-bg;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 50%;
+    background-color: #f3ecff;
+  }
+  @media screen and (min-width: 992px) {
+    background-color: #f3ecff;
+  }
+}
+
+.operation {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 992px) {
+    text-align: center;
+  }
+}
+
+.steps {
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    gap: 2vw;
+  }
+}
+
+.step {
+  background-color: $grey-bg;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 0 0 20px 20px;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .fa-solid {
+    padding-right: 20px;
+  }
+  &:hover {
+    background-color: #f3ecff;
+    .fa-solid {
+      color: $color-primary;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 30vw;
+  }
+}
+
+.number {
+  color: white;
+  background: $color-primary;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.7em;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  translate: -40px;
+}
+
+.restaurants {
+  background-color: $grey-bg;
+  @media screen and (min-width: 992px) {
+    padding: 3vw 10vw;
+  }
+}
+
+.card-resto {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 13px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-bottom: 20px;
+  position: relative;
+  &:hover {
+    margin-top: -5px;
+    box-shadow: rgba(147, 86, 220, 0.3) 0px 1px 2px 0px,
+      rgba(147, 86, 220, 0.3) 0px 2px 6px 2px;
+  }
+  img {
+    max-width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 13px 13px 0 0;
+  }
+
+  .new {
+    background-color: #99e2d0;
+    color: #25836c;
+    position: absolute;
+    top: 1.5vh;
+    right: 2.5vw;
+    padding: 7px 15px;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+}
+
+.container {
+  margin: auto 0;
+}
+
+.resto-place-fav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .resto-place-fav {
+    line-height: 1.6em;
+  }
+
+  .fa-regular.fa-heart,
+  .fa-solid.fa-heart {
+    right: 4vw;
+  }
+
+  .menu {
+    max-width: 600px;
+    margin: -30px auto 0 auto;
+  }
+
+  .menu .card-dish {
+    padding: 20px;
+  }
+
+  .menu .card-dish .dish-animation .fa-circle-check {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .step {
+    max-width: 30vw;
+  }
+
+  .restaurants {
+    padding: 3vw 10vw;
+  }
+
+  .card-resto {
+    height: 40vh;
+  }
+
+  .resto-place-fav {
+    line-height: 1.6em;
+  }
+
+  .fa-regular.fa-heart,
+  .fa-solid.fa-heart {
+    right: 2vw;
+  }
+
+  .resto-name-fav {
+    .fa-regular.fa-heart,
+    .fa-solid.fa-heart {
+      right: 10vw;
+    }
+  }
+}

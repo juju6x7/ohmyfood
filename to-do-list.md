@@ -7,6 +7,9 @@ AMÉLIORATIONS
 ❌ Delay Dishes au scroll
 ❌ Vitesse hover btn 
 
+L'ordre d'importation des fichiers .scss a son importance !
+SASS petit à petit. écriture, indentation, variables, mixin -> pattern
+
 ✅ COURS Simplifiez-vous le CSS avec Sass 
 ✅ COURS Créez des animations CSS modernes
 

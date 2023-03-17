@@ -1,321 +1,24 @@
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+@import "abstracts/variables";
+
+@import "abstracts/animation";
+@import "abstracts/mixins";
+
 @import "pages/home";
 @import "pages/page-resto";
 
-@import "abstracts/variables";
-@import 'abstracts/mixins';
-
-@import "base/reset";
-@import "base/typography";
-
-@import "layout/navigation";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
 
 @import "components/buttons";
 
-body {
-  max-width: 768px;
-  margin: auto;
-  font-family: "Roboto", sans-serif;
-}
 
-h1,
-h2,
-h6 {
-  font-weight: 500;
-}
-
-h3,
-h4,
-h5 {
-  font-weight: 600;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 2em;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-.localization {
-  height: 55px;
-  line-height: 55px;
-  background-color: #e8e8e8;
-}
-
-.fa-location-dot {
-  translate: -15px;
-}
-
-h2 {
-  font-size: 1em;
-  font-weight: 500;
-}
-
-.explore {
-  padding: 40px 30px;
-  text-align: center;
-  background-color: $grey-bg;
-}
-
-h3 {
-  font-size: 1.5em;
-  padding-bottom: 25px;
-}
-
-section {
-  padding: 40px 20px;
-}
-
-.step {
-  background-color: $grey-bg;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin: 0 0 20px 20px;
-  border-radius: 20px;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  .fa-solid {
-    padding-right: 20px;
-  }
-  &:hover {
-    background-color: #f3ecff;
-    .fa-solid {
-      color: $color-primary;
-    }
-  }
-}
-
-.number {
-  color: white;
-  background: $color-primary;
-  font-size: 0.8em;
-  text-align: center;
-  line-height: 1.7em;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  translate: -40px;
-}
-
-h4 {
-  font-size: 0.9em;
-}
-
-h5 {
-  font-size: 1.1em;
-}
-
-.restaurants {
-  background-color: $grey-bg;
-}
-
-.fa-regular.fa-heart {
-  font-size: 1.4em;
-  position: absolute;
-  right: 5vw;
-  opacity: 1;
-  z-index: 1;
-  &:hover,
-  &:active,
-  &:focus {
-    opacity: 0;
-    transition: opacity 800ms;
-    + .fa-solid.fa-heart {
-      visibility: visible;
-      transform-origin: bottom;
-      opacity: 1;
-      transition: opacity 800ms;
-    }
-  }
-}
-
-.fa-solid.fa-heart {
-  font-size: 1.4em;
-  position: absolute;
-  right: 5vw;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.bg-heart {
-  cursor: pointer;
-  background: linear-gradient(171deg, $color-secondary 0%, $color-primary 75%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.card-resto {
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 13px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  margin-bottom: 20px;
-  position: relative;
-  &:hover {
-    margin-top: -5px;
-    box-shadow: rgba(147, 86, 220, 0.3) 0px 1px 2px 0px,
-      rgba(147, 86, 220, 0.3) 0px 2px 6px 2px;
-  }
-  img {
-    max-width: 100%;
-    height: 70%;
-    object-fit: cover;
-    border-radius: 13px 13px 0 0;
-  }
-
-  .new {
-    background-color: #99e2d0;
-    color: #25836c; // darker bg
-    position: absolute;
-    top: 1.5vh;
-    right: 2.5vw;
-    padding: 7px 15px;
-    border-radius: 3px;
-    font-weight: 500;
-  }
-}
-
-.container {
-  margin: auto 0;
-}
-
-.resto-place-fav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-
-
-h6 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.1em;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-
-.fa-utensils {
-  padding-right: 14px;
-  padding-left: 2px;
-}
-
-.fa-handshake-angle {
-  padding-right: 10px;
-}
-
-.spinner {
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: spinner-opacity 3000ms forwards;
-}
-
-.icons {
-  width: 20vw;
-  height: 20vw;
-  position: relative;
-}
-
-.bg-icons {
-  background-color: #9356dc;
-  border-radius: 50%;
-  width: 30vw;
-  height: 30vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: bg-icons 2500ms forwards;
-}
-
-.icons img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: load-icons 550ms ease-in-out both;
-  @for $i from 1 through 6 {
-    &:nth-child(#{$i}) {
-      animation-delay: 550ms * $i;
-    }
-  }
-}
-
-@keyframes spinner-opacity {
-  85% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes bg-icons {
-  0% {
-    transform: scale(0);
-  }
-  10%,
-  90% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes load-icons {
-  0% {
-    transform: scale(0);
-  }
-  33% {
-    transform: scale(0.8);
-  }
-  75% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body {
-    max-width: 992px;
-  }
 
-  .explore-opeation {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .explore {
-    width: 50%;
-    background-color: #f3ecff;
-  }
-
-  .operation {
-    width: 50%;
-  }
-
-  
   .resto-place-fav {
     line-height: 1.6em;
   }
@@ -340,40 +43,9 @@ h6 {
 }
 
 @media screen and (min-width: 992px) {
-  body {
-    min-width: 992px;
-    max-width: none;
-  }
-
-  .explore-opeation {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .explore {
-    width: 50%;
-    background-color: #f3ecff;
-    padding-left: 10vw;
-  }
-
-  .operation {
-    width: 50%;
-    padding-right: 10vw;
-    padding-left: 5vw;
-  }
 
   .step {
     max-width: 25vw;
-  }
-
-  .restaurants {
-    padding: 3vw 10vw;
-  }
-
-  .grid-restos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3vw;
   }
 
   .card-resto {
@@ -384,25 +56,15 @@ h6 {
     line-height: 1.6em;
   }
 
-  .icons {
-    width: 10vw;
-    height: 10vw;
-  }
-
-  .bg-icons {
-    width: 15vw;
-    height: 15vw;
-  }
-
   .fa-regular.fa-heart,
   .fa-solid.fa-heart {
     right: 2vw;
   }
 
-  .resto-name-fav{
-  .fa-regular.fa-heart,
-  .fa-solid.fa-heart {
-    right: 10vw;
+  .resto-name-fav {
+    .fa-regular.fa-heart,
+    .fa-solid.fa-heart {
+      right: 10vw;
+    }
   }
-}
 }
