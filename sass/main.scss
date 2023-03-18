@@ -2,69 +2,11 @@
 @import "base/typography";
 @import "base/base";
 @import "abstracts/variables";
-
 @import "abstracts/animation";
 @import "abstracts/mixins";
-
-@import "pages/home";
-@import "pages/page-resto";
-
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
-
+@import "pages/home";
+@import "pages/page-resto";
 @import "components/buttons";
-
-
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-
-  .resto-place-fav {
-    line-height: 1.6em;
-  }
-
-  .fa-regular.fa-heart,
-  .fa-solid.fa-heart {
-    right: 4vw;
-  }
-
-  .menu {
-    max-width: 600px;
-    margin: -30px auto 0 auto;
-  }
-
-  .menu .card-dish {
-    padding: 20px;
-  }
-
-  .menu .card-dish .dish-animation .fa-circle-check {
-    font-size: 1.7em;
-  }
-}
-
-@media screen and (min-width: 992px) {
-
-  .step {
-    max-width: 25vw;
-  }
-
-  .card-resto {
-    height: 40vh;
-  }
-
-  .resto-place-fav {
-    line-height: 1.6em;
-  }
-
-  .fa-regular.fa-heart,
-  .fa-solid.fa-heart {
-    right: 2vw;
-  }
-
-  .resto-name-fav {
-    .fa-regular.fa-heart,
-    .fa-solid.fa-heart {
-      right: 10vw;
-    }
-  }
-}
