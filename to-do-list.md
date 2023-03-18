@@ -1,10 +1,10 @@
-❌ Architecture SASS
+
 ❌ Quel ordre import dans main.scss ?
-❌ Questions GMAIL
-❌ Peut-on importer (ex: @import "base/typography";) ailleurs que dans main.scss ou mauvaise pratique ?
+❌ L'animation se déclenche à chaque fois que l'on va sur la page d'accueil.
+    Est-ce qu'on peut gérer ça juste en HTML/CSS ou il faut du JavaScript ?
 
 AMÉLIORATIONS
-❌ Responsive Design Desktop
+❌ Améliorer Architecture SASS
 ❌ Delay Dishes au scroll
 ❌ Vitesse hover btn 
 
@@ -47,10 +47,11 @@ Couvrir l'intégralité de l'écran.
 ✅ Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
 ✅ Logo img en commentaire sous logo txt 
 ✅ Responsive Design 
+✅ Architecture SASS
 
 CHECK-LIST 📝
 ❒ Le code HTML et CSS est correctement indenté.
-❒ Aucun code CSS n'est appliqué via un attribut style dans une balise HTML.
+✅ Aucun code CSS n'est appliqué via un attribut style dans une balise HTML.
 ❒ Validation W3C HTML sans erreur.
 ❒ Validation W3C CSS sans erreur.
 ❒ L'aspect visuel correspond à la maquette sur écran mobile.

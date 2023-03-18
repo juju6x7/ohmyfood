@@ -9,7 +9,7 @@ a {
 }
 
 .fa-location-dot {
-  translate: -15px;
+  transform: translate(-15px);
 }
 
 .explore-operation {
@@ -92,7 +92,7 @@ section {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  translate: -40px;
+  transform: translate(-40px);
 }
 
 .restaurants {
