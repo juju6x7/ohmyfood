@@ -107,9 +107,9 @@ body {
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   body {
-    max-width: 992px;
+    max-width: 991px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -286,7 +286,71 @@ body {
   animation-delay: 400ms;
 }
 
-@media screen and (min-width: 768px) {
+.card-dish {
+  transition: padding-right 300ms ease-in-out;
+}
+.card-dish:hover {
+  padding-right: 20vw;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .card-dish:hover {
+    padding-right: 12vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-dish:hover {
+    padding-right: 8vw;
+  }
+}
+.card-dish:hover .dish-animation {
+  opacity: 1;
+  transform: translate(-10vw);
+}
+.card-dish:hover .fa-circle-check {
+  transform: rotate(1turn);
+}
+
+.dish-animation {
+  width: 15vw;
+  height: 100%;
+  right: -10vw;
+  background-color: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms ease-in-out;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .dish-animation {
+    width: 10vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dish-animation {
+    width: 6vw;
+  }
+}
+.dish-animation:active {
+  background-color: #9356dc;
+  transition: background-color 500ms ease-in-out;
+}
+.dish-animation:active .fa-circle-check {
+  background-color: #9356dc;
+  transition: background-color 500ms ease-in-out;
+}
+.dish-animation .fa-circle-check {
+  color: white;
+  background-color: #99e2d0;
+  transition: transform 500ms ease-in-out 100ms;
+}
+
+@media screen and (min-width: 769px) {
   .grid-restos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -296,9 +360,9 @@ body {
 @media screen and (min-width: 992px) {
   .dishes {
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-columns: 27vw 27vw 27vw;
     justify-content: center;
-    gap: 3vw;
+    gap: 2vw;
   }
 }
 header {
@@ -372,7 +436,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .explore-operation {
     display: flex;
     flex-direction: row;
@@ -394,7 +458,7 @@ section {
   text-align: center;
   background-color: #f6f6f6;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .explore {
     width: 50%;
     background-color: #f3ecff;
@@ -406,7 +470,7 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .operation {
     width: 50%;
   }
@@ -519,13 +583,13 @@ section {
   align-items: center;
   padding: 10px 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .resto-place-fav {
     line-height: 1.6em;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .fa-regular.fa-heart,
   .fa-solid.fa-heart {
     right: 4vw;
@@ -568,33 +632,21 @@ a {
   padding: 20px;
   border-radius: 40px 40px 0 0;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .menu {
     max-width: 600px;
     margin: -30px auto 0 auto;
   }
 }
 @media screen and (min-width: 992px) {
-  .menu .menu {
+  .menu {
     padding: 30px 50px;
     display: flex;
     flex-direction: column;
   }
-  .menu .menu .card-dish {
-    padding: 20px;
-  }
-  .menu .menu .card-dish .dish-animation {
-    width: 5vw;
-    right: -5vw;
-  }
-  .menu .menu .card-dish:hover {
-    padding-right: 6vw;
-  }
-  .menu .menu .card-dish:hover .dish-animation {
-    transform: translate(-5vw);
-  }
 }
-.menu .resto-name-fav {
+
+.resto-name-fav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -603,106 +655,77 @@ a {
   padding-bottom: 10px;
 }
 @media screen and (min-width: 992px) {
-  .menu .resto-name-fav {
+  .resto-name-fav {
     justify-content: center;
   }
-  .menu .resto-name-fav .fa-regular.fa-heart,
-  .menu .resto-name-fav .fa-solid.fa-heart {
+  .resto-name-fav .fa-regular.fa-heart,
+  .resto-name-fav .fa-solid.fa-heart {
     right: 10vw;
   }
 }
-.menu .resto-name-fav h2 {
+.resto-name-fav h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.7em;
   font-weight: 400;
 }
-.menu .starters,
-.menu .main-course,
-.menu .desserts {
+
+.starters,
+.main-course,
+.desserts {
   margin-top: 10px;
 }
-.menu h3 {
+
+h3 {
   font-size: 0.9em;
   font-weight: 400;
   padding: 10px 0;
 }
-.menu h3::after {
+
+h3::after {
   content: "";
   display: block;
   width: 36px;
   padding-top: 5px;
   border-bottom: 3px solid #99e2d0;
 }
-.menu .card-dish {
+
+.card-dish {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 10px 15px;
   margin-bottom: 15px;
+  line-height: 1.5em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   position: relative;
   white-space: nowrap;
   overflow: hidden;
-  transition: padding-right 300ms ease-in-out;
 }
-.menu .card-dish:hover {
-  padding-right: 20vw;
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .card-dish {
+    padding: 15px;
+  }
 }
-.menu .card-dish:hover .dish-animation {
-  opacity: 1;
-  transform: translate(-10vw);
-}
-.menu .card-dish:hover .fa-circle-check {
-  transform: rotate(1turn);
-}
-.menu .card-dish:active .dish-animation {
-  background-color: #9356dc;
-}
-.menu .card-dish:active .dish-animation .fa-circle-check {
-  background-color: #9356dc;
-}
-.menu .card-dish h4 {
+.card-dish h4 {
   font-size: 1em;
   padding-bottom: 5px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu .card-dish .description-price {
+.card-dish .description-price {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  font-size: 0.9em;
 }
-.menu .card-dish .description-price .description {
-  font-size: 0.83em;
+.card-dish .description-price .description {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   padding-right: 7px;
 }
-.menu .card-dish .description-price .price {
+.card-dish .description-price .price {
   font-weight: bold;
-  font-size: 0.9em;
-}
-.menu .card-dish .dish-animation {
-  width: 15vw;
-  height: 100%;
-  right: -10vw;
-  background-color: #99e2d0;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  position: absolute;
-  top: 0;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 500ms ease-in-out;
-}
-.menu .card-dish .dish-animation .fa-circle-check {
-  color: white;
-  background-color: #99e2d0;
-  font-size: 1.5em;
-  transition: transform 500ms ease-in-out 100ms;
 }
 
 .btn {

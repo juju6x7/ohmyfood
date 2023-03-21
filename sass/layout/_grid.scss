@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .grid-restos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,8 +9,8 @@
 @media screen and (min-width: 992px) {
   .dishes {
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-columns: 27vw 27vw 27vw;
     justify-content: center;
-    gap: 3vw;
+    gap: 2vw;
   }
 }

@@ -543,9 +543,9 @@ h6 {
     transform: scale(0);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   body {
-    max-width: 992px;
+    max-width: 991px;
   }
   .explore-opeation {
     display: flex;

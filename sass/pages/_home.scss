@@ -15,7 +15,7 @@ a {
 .explore-operation {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+  @media screen and (min-width: 769px) and (max-width: 991px) {
     display: flex;
     flex-direction: row;
   }
@@ -33,7 +33,7 @@ section {
   padding: 40px 30px;
   text-align: center;
   background-color: $grey-bg;
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+  @media screen and (min-width: 769px) and (max-width: 991px) {
     width: 50%;
     background-color: #f3ecff;
   }
@@ -43,7 +43,7 @@ section {
 }
 
 .operation {
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+  @media screen and (min-width: 769px) and (max-width: 991px) {
     width: 50%;
   }
   @media screen and (min-width: 992px) {
@@ -149,14 +149,14 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     line-height: 1.6em;
   }
 }
 
 .fa-regular.fa-heart,
 .fa-solid.fa-heart {
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+  @media screen and (min-width: 769px) and (max-width: 991px) {
     right: 4vw;
   }
   @media screen and (min-width: 992px) {

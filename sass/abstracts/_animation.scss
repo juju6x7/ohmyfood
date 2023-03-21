@@ -159,3 +159,60 @@
 .dish4 {
   animation-delay: 400ms;
 }
+
+// DISH HOVER
+.card-dish {
+  transition: padding-right 300ms ease-in-out;
+  &:hover {
+    padding-right: 20vw;
+    @media screen and (min-width: 769px) and (max-width: 991px) {
+      padding-right: 12vw;
+    }
+    @media screen and (min-width: 992px) {
+      padding-right: 8vw;
+    }
+    .dish-animation {
+      opacity: 1;
+      transform: translate(-10vw);
+    }
+    .fa-circle-check {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+.dish-animation {
+  width: 15vw;
+  height: 100%;
+  right: -10vw;
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    width: 10vw;
+  }
+  @media screen and (min-width: 992px) {
+    width: 6vw;
+  }
+  background-color: #99e2d0;
+  &:active {
+    background-color: #9356dc;
+    transition: background-color 500ms ease-in-out;
+    .fa-circle-check {
+      background-color: #9356dc;
+      transition: background-color 500ms ease-in-out;
+    }
+  }
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms ease-in-out;
+  .fa-circle-check {
+    color: white;
+    background-color: #99e2d0;
+    transition: transform 500ms ease-in-out 100ms;
+  }
+  font-size: 1.5em;
+}
