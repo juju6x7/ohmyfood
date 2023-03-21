@@ -87,6 +87,19 @@ h3 {
   padding-bottom: 25px;
 }
 
+.menu h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.menu h3::after {
+  content: "";
+  display: block;
+  width: 36px;
+  padding-top: 5px;
+  border-bottom: 3px solid #99e2d0;
+}
+
 h4 {
   font-size: 0.9em;
 }
@@ -673,20 +686,6 @@ a {
 .main-course,
 .desserts {
   margin-top: 10px;
-}
-
-h3 {
-  font-size: 0.9em;
-  font-weight: 400;
-  padding: 10px 0;
-}
-
-h3::after {
-  content: "";
-  display: block;
-  width: 36px;
-  padding-top: 5px;
-  border-bottom: 3px solid #99e2d0;
 }
 
 .card-dish {
