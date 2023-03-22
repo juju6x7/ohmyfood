@@ -2,7 +2,7 @@
 
 Ohmyfood est un site 100% mobile qui répertorie les menus de restaurants gastronomiques.
 
-# Objectifs
+# Objectifs 🎯
 
 ### Dynamiser les page web avec des animations CSS
 - transitions
@@ -16,3 +16,12 @@ Ohmyfood est un site 100% mobile qui répertorie les menus de restaurants gastro
 ### Utiliser GitHub
 - commits en lignes de commandes (git add *, status, commit -m "", git push, git branch...)
 - Pages pour héberger le site
+
+# Screenshots 📸
+Responsive design (Desktop, Tablet, Mobile)
+
+![screeshots](https://user-images.githubusercontent.com/98356784/226656328-5ed7c9af-45b0-44fc-9738-a1b030881ea6.jpg)
+
+# Demo
+
+▶️ https://jujudev7.github.io/ohmyfood/
