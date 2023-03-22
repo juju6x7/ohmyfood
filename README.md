@@ -29,7 +29,7 @@ Responsive design (Desktop, Tablet, Mobile)
 # Tuto Step by Step 👣
 - Install Node.js : https://nodejs.org/en/
 - npm init
-- npm install -g sass
+- npm install sass
 - Create a script :
 "scripts": {
 "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
