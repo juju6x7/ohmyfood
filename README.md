@@ -25,3 +25,13 @@ Responsive design (Desktop, Tablet, Mobile)
 # Demo
 
 ▶️ https://jujudev7.github.io/ohmyfood/
+
+# Tuto Step by Step
+- Install Node.js : https://nodejs.org/en/
+- npm init
+- npm install -g sass
+- Create a script :
+"scripts": {
+"sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+},
+- npm run sass
