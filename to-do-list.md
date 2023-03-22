@@ -1,15 +1,6 @@
-❌ CHECK-LIST
-❌ Quel ordre import dans main.scss ?
-❌ L'animation se déclenche à chaque fois que l'on va sur la page d'accueil.
+❌ Emplacement LOADER correct ?
+❌ L'animation LOADER se déclenche à chaque fois que l'on va sur la page d'accueil.
     Est-ce qu'on peut gérer ça juste en HTML/CSS ou il faut du JavaScript ?
-
-AMÉLIORATIONS
-❌ Améliorer Architecture SASS
-❌ Delay Dishes au scroll
-❌ Vitesse hover btn 
-
-L'ordre d'importation des fichiers .scss a son importance !
-SASS petit à petit. écriture, indentation, variables, mixin -> pattern
 
 ✅ COURS Simplifiez-vous le CSS avec Sass 
 ✅ COURS Créez des animations CSS modernes
@@ -42,6 +33,7 @@ PAGE RESTO
 ✅ Loading spinner : doit apparaître 1 à 3 secondes quand on arrive sur la page d'accueil
 Couvrir l'intégralité de l'écran.
 ✅ BTN : au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
+✅ Vitesse hover btn 
 ✅ FAVORI : au clic, le cœur devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
 ✅ Ajouter Favicon
 ✅ Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
@@ -57,8 +49,8 @@ CHECK-LIST 📝
 ✅ L'aspect visuel correspond à la maquette sur écran mobile.
 ✅ Aucun framework (type Bootstrap) n'est utilisé pour ce projet.
 ✅ La maquette s’adapte sur mobile, tablette et desktop.
-❒ Le site s’affiche sans perte d’information et sans barre de défilement horizontale sur les différentes tailles (smartphone, tablette, écran de portable, écran fixe, au moins jusqu’à une résolution “hd” en 1920*1080).
-❒ Toutes les animations demandées sont présentes.
-❒ Le code de l’application est hébergé sur GitHub ou GitLab.
-❒ Le versionning de l’application est effectué régulièrement.
-❒ Le site est déployé grâce à Git, sans passer par un FTP (avec GitHub Pages par exemple).
+✅ Le site s’affiche sans perte d’information et sans barre de défilement horizontale sur les différentes tailles (smartphone, tablette, écran de portable, écran fixe, au moins jusqu’à une résolution “hd” en 1920*1080).
+✅ Toutes les animations demandées sont présentes.
+✅ Le code de l’application est hébergé sur GitHub ou GitLab.
+✅ Le versionning de l’application est effectué régulièrement.
+✅ Le site est déployé grâce à Git, sans passer par un FTP (avec GitHub Pages par exemple).

@@ -157,24 +157,6 @@ body {
     height: 10vw;
   }
 }
-
-.bg-icons {
-  background-color: #9356dc;
-  border-radius: 50%;
-  width: 30vw;
-  height: 30vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: bg-icons 2500ms forwards;
-}
-@media screen and (min-width: 992px) {
-  .bg-icons {
-    width: 15vw;
-    height: 15vw;
-  }
-}
-
 .icons img {
   position: absolute;
   width: 100%;
@@ -198,6 +180,23 @@ body {
 }
 .icons img:nth-child(6) {
   animation-delay: 3300ms;
+}
+
+.bg-icons {
+  background-color: #9356dc;
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bg-icons 2500ms forwards;
+}
+@media screen and (min-width: 992px) {
+  .bg-icons {
+    width: 15vw;
+    height: 15vw;
+  }
 }
 
 @keyframes spinner-opacity {
@@ -748,6 +747,7 @@ a {
   -webkit-box-shadow: 4px 5px 15px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 5px 15px 1px rgba(0, 0, 0, 0.75);
   background: linear-gradient(171deg, #fface8, #ae80e5);
+  transition: 200ms;
 }
 
 .order {

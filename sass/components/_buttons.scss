@@ -14,9 +14,10 @@
     box-shadow: 4px 5px 15px 1px rgba(0, 0, 0, 0.75);
     background: linear-gradient(
       171deg,
-      lighten(#ff79da, 10),
-      lighten(#9356dc, 10)
+      lighten($color-secondary, 10),
+      lighten($color-primary, 10)
     );
+  transition: 200ms;
   }
 }
 
