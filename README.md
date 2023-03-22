@@ -22,11 +22,11 @@ Responsive design (Desktop, Tablet, Mobile)
 
 ![screeshots](https://user-images.githubusercontent.com/98356784/226656328-5ed7c9af-45b0-44fc-9738-a1b030881ea6.jpg)
 
-# Demo
+# Demo 👀
 
 ▶️ https://jujudev7.github.io/ohmyfood/
 
-# Tuto Step by Step
+# Tuto Step by Step 👣
 - Install Node.js : https://nodejs.org/en/
 - npm init
 - npm install -g sass
