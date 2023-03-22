@@ -421,6 +421,10 @@ footer a {
   color: white;
 }
 
+.contact:hover {
+  color: #99e2d0;
+}
+
 .fa-utensils {
   padding-right: 14px;
   padding-left: 2px;
