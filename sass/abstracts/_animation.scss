@@ -1,4 +1,4 @@
-// LOADER
+// LOADER on index.html
 .spinner {
   background-color: white;
   position: absolute;
@@ -88,7 +88,7 @@
   }
 }
 
-// HEART FAV
+// HEART FAV (empty heart progressively filled from the bottom)
 .fa-regular.fa-heart {
   font-size: 1.4em;
   position: absolute;
@@ -124,7 +124,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-// APPEARANCE DISHES (TOP & DELAY)
+// APPEARANCE DISHES (moving to top & delay)
 @keyframes appearance {
   0% {
     transform: translateY(20px);
@@ -160,7 +160,7 @@
   animation-delay: 400ms;
 }
 
-// DISH HOVER
+// DISH HOVER (check appears from right and turns)
 .card-dish {
   transition: padding-right 300ms ease-in-out;
   &:hover {
