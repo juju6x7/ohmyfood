@@ -142,6 +142,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
   animation: spinner-opacity 3000ms forwards;
   z-index: 2;
 }
