@@ -116,7 +116,7 @@ section {
     height: 40vh;
   }
   &:hover {
-    margin-top: -5px;
+  transform: translateY(-5px);
     box-shadow: rgba(147, 86, 220, 0.3) 0px 1px 2px 0px,
       rgba(147, 86, 220, 0.3) 0px 2px 6px 2px;
   }

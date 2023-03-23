@@ -147,6 +147,23 @@ body {
   z-index: 2;
 }
 
+.bg-icons {
+  background-color: #9356dc;
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bg-icons 2500ms forwards;
+}
+@media screen and (min-width: 992px) {
+  .bg-icons {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
 .icons {
   width: 20vw;
   height: 20vw;
@@ -172,32 +189,6 @@ body {
 }
 .icons img:nth-child(3) {
   animation-delay: 1650ms;
-}
-.icons img:nth-child(4) {
-  animation-delay: 2200ms;
-}
-.icons img:nth-child(5) {
-  animation-delay: 2750ms;
-}
-.icons img:nth-child(6) {
-  animation-delay: 3300ms;
-}
-
-.bg-icons {
-  background-color: #9356dc;
-  border-radius: 50%;
-  width: 30vw;
-  height: 30vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: bg-icons 2500ms forwards;
-}
-@media screen and (min-width: 992px) {
-  .bg-icons {
-    width: 15vw;
-    height: 15vw;
-  }
 }
 
 @keyframes spinner-opacity {
@@ -359,7 +350,7 @@ body {
 }
 .dish-animation .fa-circle-check {
   color: white;
-  background-color: #99e2d0;
+  background-color: #99e2d0 500ms ease-in-out;
   transition: transform 500ms ease-in-out 100ms;
 }
 
@@ -569,7 +560,7 @@ section {
   }
 }
 .card-resto:hover {
-  margin-top: -5px;
+  transform: translateY(-5px);
   box-shadow: rgba(147, 86, 220, 0.3) 0px 1px 2px 0px, rgba(147, 86, 220, 0.3) 0px 2px 6px 2px;
 }
 .card-resto img {
