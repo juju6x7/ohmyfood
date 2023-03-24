@@ -1,8 +1,3 @@
-❌ Emplacement LOADER correct ?
-❌ L'animation LOADER se déclenche à chaque fois que l'on va sur la page d'accueil.
-    Est-ce qu'on peut gérer ça juste en HTML/CSS ou il faut du JavaScript ?
-❌ Footer c/c manuellement s/ chaque Page, autre méthode ?
-
 ✅ COURS Simplifiez-vous le CSS avec Sass 
 ✅ COURS Créez des animations CSS modernes
 
